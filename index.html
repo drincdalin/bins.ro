@@ -1,17 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>bins.ro</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <nav>
-
+            <a href="#">bins.ro</a>
+            <div>
+                <a href="#gallery">events</a>
+                <a href="#contact">contact</a>
+            </div>
         </nav>
-        <h1>
-            bins.ro
-        </h1>
+
+        <header class="card" id="hero">
+            <h1 id="ev">Evenimente si atractii din</h1>
+            <h1 id="tb">Tara Beiusului</h1>
+        </header>
+
+        <main>
+        <div class="card" id="photos">
+  <div class="track">
+    <!-- Original 4 images -->
+    <img src="images/bg.jpeg" alt="Tara Beiusului">
+    <img src="images/bg.jpeg" alt="Tara Beiusului">
+    <img src="images/bg.jpeg" alt="Tara Beiusului">
+    <img src="images/bg.jpeg" alt="Tara Beiusului">
+
+    <!-- Duplicate 4 images (makes the end seamless) -->
+    <img src="images/bg.jpeg" alt="Tara Beiusului">
+    <img src="images/bg.jpeg" alt="Tara Beiusului">
+    <img src="images/bg.jpeg" alt="Tara Beiusului">
+    <img src="images/bg.jpeg" alt="Tara Beiusului">
+  </div>
+</div>
+
+        <div class="card" id="gallery">
+            <h2>Evenimente</h2>
+            <div class="ggrid">
+                <div class="gitem">
+                    <img src="images/sculptf.webp" alt="Sculpt Fest">
+                    <h3>Sculpt Fest</h3>
+                    <p>Artă, muzică live și tradiții în inima naturii, la Căbești.</p>
+                    <p>22-24 August 2025</p>
+                    <a href="#"><button>See more</button></a>
+                </div>
+
+                <div class="gitem">
+                    <img src="images/gsidbihor.jpeg" alt="Gusturi si traditii de bihor">
+                    <h3>Gusturi si traditii de bihor</h3>
+                    <p>Descoperă gusturile tradiționale și obiceiurile specifice regiunii.</p>
+                    <p>19-20 septembrie 2025</p>
+                    <a href="#"><button>See more</button></a>
+                </div>
+
+                <div class="gitem">
+                    <img src="images/beiusfest.jpeg" alt="Beius Fest">
+                    <h3>Beius Fest</h3>
+                    <p>Festivalul orașului Beius.</p>
+                    <p>5-7 iunie 2026</p>
+                    <a href="#"><button>See more</button></a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
         <script src="index.js"></script>
     </body>
 </html>
