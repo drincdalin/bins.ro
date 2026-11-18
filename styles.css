@@ -181,21 +181,25 @@ nav div a:hover {
   border-top: 1px solid var(--rule);
   overflow: hidden;
   display: flex;
+  width: 100%;
+  user-select: none;
 }
 
 #photos .track {
   display: flex;
-  width: max-content;
-  animation: imgscroll 60s linear infinite;
+  flex-shrink: 0;
+  min-width: 100%;
+  animation: imgscroll 40s linear infinite !important;
+  will-change: transform;
 }
 
 #photos:hover .track {
-  animation-play-state: paused;
+  animation-play-state: paused !important;
 }
 
 #photos img {
   display: block;
-  width: 100vw; 
+  width: 50vw;
   height: 300px;
   object-fit: cover;
   background: var(--tile);
@@ -204,9 +208,9 @@ nav div a:hover {
 
 @keyframes imgscroll {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-100%, 0, 0);
   }
 }
